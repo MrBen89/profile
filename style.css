@@ -1,0 +1,65 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.divider-box {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-pic {
+  max-width: 50%;
+  border-radius: 15%;
+  margin: 0 auto;
+  padding:20px;
+}
+
+.crt {
+  background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+  background-size: cover;
+  background-size: 100% 5px;
+
+  min-height: 100vh;
+  color: #25ea25;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  text-shadow: 0 0 4px #25ea25;
+
+  filter: blur(0.2px);
+}
+
+.fab {
+  color: #25ea25;
+}
+
+@media screen {
+  .crt {
+    animation: scanlines infinite 55s linear;
+  }
+}
+
+@keyframes scanlines {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -40px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
